@@ -1,0 +1,26 @@
+﻿<Window x:Class="Library.UI.LibrarianWindows.BookListWindows.BookDescriptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Library.UI.LibrarianWindows.BookListWindows"
+        mc:Ignorable="d"
+        Title="Подробнее о книге" Height="450" Width="800">
+    <Grid>
+        <Canvas>
+            <Image Name="CoverImage"/>
+            <Label Canvas.Top="150" Canvas.Left="30">Название:</Label>
+            <TextBlock Canvas.Top="155" Canvas.Left="150" Name="TitleTextBlock" Text="{Binding Title}" />
+            <Label Canvas.Top="170" Canvas.Left="30">Жанр:</Label>
+            <TextBlock Canvas.Top="175" Canvas.Left="150" Name="GenreTextBlock" Text="{Binding Genre}" />
+            <Label Canvas.Top="190" Canvas.Left="30">Автор:</Label>
+            <TextBlock Canvas.Top="195" Canvas.Left="150" Name="AuthorTextBlock" Text="{Binding Author}" />
+            <Label Canvas.Top="210" Canvas.Left="30">Год публикации:</Label>
+            <TextBlock Canvas.Top="215" Canvas.Left="150" Name="PublicationDateTextBlock" Text="{Binding PublicationDate}" />
+            <Label Canvas.Top="230" Canvas.Left="30">ISBN:</Label>
+            <TextBlock Canvas.Top="235" Canvas.Left="150" Name="IsbnTextBlock" Text="{Binding Isbn}" />
+            <Label Canvas.Top="10" Canvas.Left="220">Описание:</Label>
+            <TextBlock Canvas.Top="30" Canvas.Left="220" Name="DescriptionTextBlock" />
+        </Canvas>
+    </Grid>
+</Window>
